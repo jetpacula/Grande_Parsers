@@ -1,0 +1,5 @@
+OSINT
+extracted captions
+LC_ALL=C tr -dc '\0-\177' <file >newfile
+sed '/^[[:space:]]*$/d' withempty.txt > withoutEmpty.txt
+awk 'NF<=1{print}' testfile
