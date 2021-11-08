@@ -20,7 +20,7 @@ Following steps were taken to structure the data:
   3. To get speaker lables these were matched and then processed according to each interview specifics. Basically, I calculated the intersection of each conversation window from VAD processing with the range of the official subtitles and chosen the maximum value speaker label. (something like 1-nearest neighbor algorythm).
 A more detailed commentary with example could be found in [Kelly ipynb file](https://github.com/jetpacula/Grande_Parsers/blob/main/youtubeParser/Interview_Kelly.ipynb).
   4. Each interview is then saved as txt file in [this directory](https://github.com/jetpacula/Grande_Parsers/tree/main/youtubeParser/results).
-As a bonus, Ariana's monologue can be found [here](https://github.com/jetpacula/Grande_Parsers/blob/main/youtubeParser/results/youtube_mono.txt). This data was now cleaned or transformed due to low value of one-liners.
+As a bonus, Ariana's monologue can be found [here](https://github.com/jetpacula/Grande_Parsers/blob/main/youtubeParser/results/youtube_mono.txt). This data was not cleaned or transformed due to low value of one-liners.
 
 Lessons learned and future work
 Youtube NLP processing presents a significant potential as a data source when used with VAD method, however the accuaracy is pretty low due to simplicity of chosen algorytm. The accuaracy of this approach could be dramatically increased by adding more neighbors to calculation and implementing full-fledged K-Means or even deep learning NN. 
